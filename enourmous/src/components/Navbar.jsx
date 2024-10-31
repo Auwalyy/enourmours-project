@@ -1,26 +1,36 @@
-import React from 'react';
-import './Navbar.css'
+import React, { useState } from 'react';
+import { FaBars } from 'react-icons/fa'; // Import the hamburger icon
+import { FaTimes } from 'react-icons/fa'; // Import the close icon
+import './Navbar.css';
 
 const Navbar = () => {
-    const navLinks = [
-        { name: "Home", path: "/" },
-        { name: "About", path: "/about" },
-        { name: "Services", path: "/services" },
-        { name: "Contact Us", path: "/contact" },
-    ];
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    return (
-        <nav className="navbar container" aria-label="Main Navigation">
-            <h1 className="navbar__title">Enourmous</h1>
-            <div className="navbar__links">
-                {navLinks.map((item) => (
-                    <a key={item.name} href={item.path} className="navbar__link">
-                        {item.name}
-                    </a>
-                ))}
-            </div>
-        </nav>
-    );
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+     <div className="containers-nav">
+      <div className="nav">
+      <div className="header">
+        <h2 className="title">Enourmous</h2>
+      </div>
+      <div className={`links ${isMenuOpen ? 'active' : ''}`}>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div className="menu-toggle" onClick={toggleMenu}>
+        {isMenuOpen ? <FaTimes /> : <FaBars />}
+      </div>
+    </div>
+     </div>
+  );
 };
 
 export default Navbar;
