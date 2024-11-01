@@ -1,0 +1,15 @@
+.info-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.info-box h3 {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    color: #35413c;
+    font-size: 30.5px;
+}

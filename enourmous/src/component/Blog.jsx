@@ -4,6 +4,7 @@ import video from '../assets/images/video.png'
 import { FaArrowRight } from 'react-icons/fa'
 import articleImg from '../assets/images/article.png'
 import caseStudy from '../assets/images/case-study.png'
+import Title from './Title'
 
 
 
@@ -33,7 +34,7 @@ const Blog = () => {
         <section id="blog" className='blog'>
             <div className="container">
                 <div className="blog__top-content">
-                    <h6 className="subtitle">Our Blog</h6>
+                    <Title title="Blogs"/>
                     <h2>Let's have a look from <span className="highlight">
                         recent blog</span></h2>
                 </div>

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Container for the Navbar */
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;  /* Center items vertically */
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+}
+
+/* Logo styles */
+.navbar__logo {
+  color: #fff;
+    width: 50px;  /* Adjust width as needed */
+    height: auto;  /* Keep aspect ratio */
+    margin-right: 20px;  /* Space between logo and title */
+}
+
+/* Title styles */
+.navbar__title {
+    font-size: 2rem;  /* Increased font size */
+    font-weight: 700;  /* Make it bold */
+    color: #35413c;  /* Consistent color */
+    margin: 0;  /* Remove default margin */
+}
+
+/* Main navbar styles */
+.navbar__links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Links styling */
+.navbar__link {
+    color: #35413c;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+    color: green;  /* Hover color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Stack the header and toggle button */
+    .navbar {
+        flex-direction: column; /* Stack items on small screens */
+        align-items: flex-start; /* Align to the left */
+        background-color: #35413c;
+        color: #fff;
+    }
+
+    /* Make the title and logo larger on small screens */
+    .navbar__title {
+        font-size: 1.8rem; /* Adjust font size */
+    }
+    .navbar__link{
+      background-color: #35413c;
+      color: #fff;
+    }
+
+    /* Responsive adjustments */
+    .navbar__logo {
+        width: 40px; /* Adjust size for mobile */
+    }
+}

@@ -1,0 +1,39 @@
+.person-card {
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4666666667);
+}
+.person-card .hero-img {
+  position: relative;
+  width: 300px;
+  min-width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+  overflow: hidden;
+}
+.person-card .hero-img img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+.person-card .info {
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 12px;
+}
+.person-card .info h3 {
+  font-size: 20px;
+  color: #35413c;
+}
+.person-card .info p {
+  font-size: 15px;
+  opacity: 60%;
+}
+.person-card.big .hero-img {
+  width: 400px;
+  min-width: 100%;
+  height: 400px;
+}
+
+/*# sourceMappingURL=PersonCard.css.map */

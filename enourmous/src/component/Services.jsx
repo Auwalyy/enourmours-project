@@ -1,38 +1,45 @@
 import React from 'react'
 import './Services.css'
 import { GrServices } from 'react-icons/gr'
+import { MdWeb } from "react-icons/md";
+import { MdOutlineComputer } from "react-icons/md";
+import { MdDesignServices } from "react-icons/md";
+import Title from './Title';
 
 
 const serviceData = [
     {
-        icon: <GrServices />,
+        icon: <MdOutlineComputer />,
         title: 'App Development',
-        desc: 'Lorem ipsum dolor, sit amet elit, quis quae numqua quas ullam natus explicabo velit atque'
-
+        desc: "Building high-performance mobile and desktop apps, delivering immersive user experiences across iOS, Android, and more."
     },
     {
-        icon: <GrServices />,
+        icon: <MdWeb />,
         title: 'Web Design',
-        desc: 'Lorem ipsum dolor, sit amet elit, quis quae numqua quas ullam natus explicabo velit atque'
+        desc: "Creating responsive, user-friendly websites that enhance your brand and captivate audiences using the latest technologies"
     },
     {
-        icon: <GrServices />,
+        icon: <MdDesignServices />,
         title: 'Graphic Design',
-        desc: 'Lorem ipsum dolor, sit amet elit, quis quae numqua quas ullam natus explicabo velit atque'
+        desc: 'Crafting memorable brand identities through unique logos and impactful visuals that make your brand stand out."'
     },
-    {
-        icon: <GrServices />,
-        title: 'Digital Marketing',
-        desc: 'Lorem ipsum dolor, sit amet elit, quis quae numqua quas ullam natus explicabo velit atque'
-    },
+     
 ]
+
+
+// {
+//     icon: <GrServices />,
+//     title: 'Digital Marketing',
+//     desc: 'Driving growth through strategic SEO, social media, and data-driven campaigns to boost engagement and maximize reach.'
+// },
+
 
 const Services = () => {
     return (
         <section id="services">
             <div className="container">
                 <div className="services__top-content">
-                    <h6 className='subtitle'>Our Services</h6>
+                    <Title title={"Our Services"}/>
                     <h2>Streamline Your Business with out</h2>
                     <h3>Top-Notch Services</h3>
                 </div>

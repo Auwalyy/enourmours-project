@@ -1,0 +1,100 @@
+/* Footer Container */
+.footer {
+  background-color: #35413c;
+  color: #fff;
+  padding: 40px 20px; /* Increased padding for a more spacious look */
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+}
+
+/* Footer Sections */
+.footer-container {
+  max-width: 1200px; /* Increased max-width to allow more content space */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* Increased gap for better spacing */
+  flex-wrap: wrap;
+}
+
+/* Section Titles */
+.footer-section h2, .footer-section h3 {
+  color: #86caae;
+  font-weight: 700;
+  margin-bottom: 20px; /* Slightly larger margin for visual hierarchy */
+  padding-left: 20px;
+}
+
+/* About Section */
+.footer-section.about p {
+  font-size: 1rem;
+  line-height: 1.8; /* Increased line-height for readability */
+  color: #e9ecef;
+  padding: 0 20px;
+}
+
+/* Links Section */
+.footer-section.links ul {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.footer-section.links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section.links ul li a:hover {
+  color: #86caae;
+}
+
+/* Contact Section */
+.footer-section.contact p {
+  font-size: 1rem;
+  margin: 10px 0; /* Increased margin for space between lines */
+  color: #e9ecef;
+  padding: 0 20px;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  text-align: center;
+  padding-top: 25px;
+  border-top: 1px solid #86caae;
+  font-size: 0.9rem;
+  color: #e9ecef;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 30px; /* Increased gap for clearer separation on mobile */
+      padding: 0 15px; /* Added padding for mobile edge cases */
+  }
+
+  .footer-section {
+      width: 100%;
+      padding: 0;
+  }
+
+  /* Aligning content centrally for mobile */
+  .footer-section h2, .footer-section h3 {
+      padding-left: 0;
+  }
+
+  .footer-section.about p,
+  .footer-section.contact p {
+      padding: 0 10px;
+  }
+
+  .footer-bottom {
+      padding: 20px;
+  }
+}
