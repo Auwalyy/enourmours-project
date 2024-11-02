@@ -11,7 +11,8 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="navbar container" aria-label="Main Navigation">
+        <div className="container">
+             <nav className="navbar" aria-label="Main Navigation">
              <h1 className="navbar__title">Enourmous</h1>
              <img src={logo} className='.navbar__logo' alt="" />
             <div className="navbar__links">
@@ -22,6 +23,7 @@ const Navbar = () => {
                 ))}
             </div>
         </nav>
+        </div>
     );
 };
 

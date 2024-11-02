@@ -26,7 +26,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`containers-nav ${isScrolled ? 'scrolled' : ''}`}>
+    <div className="container">
+      <div className={`containers-nav ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav">
         <div className="header">
           <h2 className="title-nav">Enourmous</h2>
@@ -44,6 +45,7 @@ const Navbar = () => {
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
+    </div>
     </div>
   );
 };

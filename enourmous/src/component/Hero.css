@@ -152,9 +152,11 @@
   .hero .home {
     flex-direction: column;
     align-items: center;
+    text-align: center;
     height: auto;
   }
   .hero .home .hero-contents {
+    padding-top: 20px;
     width: 100%;
     text-align: center;
   }
@@ -162,6 +164,7 @@
     font-size: 2.2rem;
   }
   .hero .home .hero-contents p {
+    margin: 5px;
     font-size: 0.95rem;
   }
   .hero .home .hero-contents .buttons {
@@ -188,7 +191,7 @@
     padding-right: 15px;
   }
   .hero .home .hero-contents h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .hero .home .hero-contents p {
     font-size: 0.9rem;

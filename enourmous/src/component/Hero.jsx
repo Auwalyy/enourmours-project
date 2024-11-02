@@ -4,7 +4,8 @@ import Button from "./Button";
 
 function Hero() {
   return (
-    <div className="hero observe show">
+     <div className="container">
+      <div className="hero observe show">
       <section className="home">
         <div className="hero-contents">
           <h1><span>Building Digital Solutions</span><br />  That Elevates Your <br /> Brand</h1>
@@ -26,6 +27,7 @@ function Hero() {
         </div>
       </section>
     </div>
+     </div>
 
   );
 }
