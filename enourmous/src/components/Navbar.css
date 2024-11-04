@@ -1,6 +1,6 @@
 /* Navbar Container */
 .containers-nav {
-  max-width: 1200px;
+  max-width: 1150;
   width: 100%;
   background-color: #fff;
   color: #35413c;
@@ -25,7 +25,6 @@
 /* Main Navbar */
 .nav {
   width: 100%;
-  max-width: 1200px;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
@@ -70,10 +69,10 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   .nav {
-    max-width: 450px;
-    width: 80%;
+    max-width: 280px;
+    width: 100%;
     gap: 1rem;
     flex-direction: row;
     justify-content: space-between;

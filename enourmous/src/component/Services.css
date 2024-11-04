@@ -125,8 +125,9 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 368px) {
     .service__item-wrapper {
+        width: 100%;
         gap: 15px;
         padding: 10px;
     }

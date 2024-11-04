@@ -37,7 +37,7 @@ const serviceData = [
 const Services = () => {
     return (
         <section id="services">
-            <div className="container">
+            <div>
                 <div className="services__top-content">
                     <Title title={"Our Services"}/>
                     <h2>Streamline Your Business with out</h2>

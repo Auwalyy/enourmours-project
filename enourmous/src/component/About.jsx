@@ -6,8 +6,8 @@ import InfoBox from "./InfoBox";
 function About() {
   return (
     <div id="about">
-      <Title title={"About Us"} />
       <div className="about">
+      <Title  title={"About Us"} />
         <h4>Why choose us</h4>
         <h3>Experts In Solving Complex Challenges For Our Clients</h3>
         <p>

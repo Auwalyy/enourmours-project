@@ -10,3 +10,10 @@
     font-family: "Merriweather", 'Times New Roman', serif;
     color: #fff;
 }
+
+@media screen and (max-width: 360px){
+    .title{
+        max-width: 360px;
+        width: 100%;
+    }
+}

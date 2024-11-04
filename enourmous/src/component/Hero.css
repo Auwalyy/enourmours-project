@@ -184,8 +184,9 @@
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 380px) {
   .hero {
+    width: 100%;
     padding-top: 80px;
     padding-left: 20px;
     padding-right: 15px;
