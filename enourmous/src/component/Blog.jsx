@@ -43,7 +43,7 @@ const Blog = () => {
                     {
                         blogData.map((item, index) => (
                             <div className="blog__item" key={index}>
-                                <h2>{item.title}</h2>
+                                <h3>{item.title}</h3>
                                 <div className="blog__img">
                                     <img src={item.imgUrl} alt="" />
                                 </div>
