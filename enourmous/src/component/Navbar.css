@@ -2,29 +2,37 @@
 
 /* Container for the Navbar */
 .navbar {
-    width: 100%;
+    width: 100vw;
     background-color: #fff;
     display: flex;
     text-transform: uppercase;
-    align-items: center;  /* Center items vertically */
+    align-items: center;
+    /* Center items vertically */
     font-family: "Merriweather", serif;
     font-weight: 300;
 }
 
 /* Logo styles */
 .navbar__logo {
-  color: #fff;
-    width: 50px;  /* Adjust width as needed */
-    height: auto;  /* Keep aspect ratio */
-    margin-right: 20px;  /* Space between logo and title */
+    color: #fff;
+    width: 50px;
+    /* Adjust width as needed */
+    height: auto;
+    /* Keep aspect ratio */
+    margin-right: 20px;
+    /* Space between logo and title */
 }
 
 /* Title styles */
 .navbar__title {
-    font-size: 2rem;  /* Increased font size */
-    font-weight: 700;  /* Make it bold */
-    color: #35413c;  /* Consistent color */
-    margin: 0;  /* Remove default margin */
+    font-size: 2rem;
+    /* Increased font size */
+    font-weight: 700;
+    /* Make it bold */
+    color: #35413c;
+    /* Consistent color */
+    margin: 0;
+    /* Remove default margin */
 }
 
 /* Main navbar styles */
@@ -43,31 +51,38 @@
 }
 
 .navbar__link:hover {
-    color: green;  /* Hover color */
+    color: green;
+    /* Hover color */
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
+
     /* Stack the header and toggle button */
     .navbar {
         width: 100%;
-        flex-direction: column; /* Stack items on small screens */
-        align-items: flex-start; /* Align to the left */
+        flex-direction: column;
+        /* Stack items on small screens */
+        align-items: flex-start;
+        /* Align to the left */
         background-color: #35413c;
         color: #fff;
     }
 
     /* Make the title and logo larger on small screens */
     .navbar__title {
-        font-size: 1.2rem; /* Adjust font size */
+        font-size: 1.2rem;
+        /* Adjust font size */
     }
-    .navbar__link{
-      background-color: #35413c;
-      color: #fff;
+
+    .navbar__link {
+        background-color: #35413c;
+        color: #fff;
     }
 
     /* Responsive adjustments */
     .navbar__logo {
-        width: 40px; /* Adjust size for mobile */
+        width: 40px;
+        /* Adjust size for mobile */
     }
 }

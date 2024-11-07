@@ -10,4 +10,38 @@
     font-family: "Merriweather", 'Times New Roman', serif;
     cursor: pointer;
     padding: 10px;
+
+    border: 2px solid #35413c;
+    border-radius: 0px;
+    transition: 0.3s ease;
 }
+
+.button.primary {
+    color: #fff;
+    background-color: #35413c;
+}
+
+.button:hover {
+    background-color: #35413c;
+    color: #fff;
+}
+
+.button.primary:hover {
+    background-color: #fff;
+    color: #35413c;
+    border: 2px solid #35413c;
+}
+
+/* .buttons .btn-1 {
+    color: #fff;
+    background-color: #35413c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+
+.buttons .btn-2 {
+    color: #35413c;
+    background-color: transparent;
+    border: 2px solid #35413c;
+} */
